@@ -31,6 +31,14 @@ back many projects. Neither can _belong to_ just one of the other.
 However, if we introduce a third class in-between Project and Backer, we can
 establish a _has-many-through_ relationship _in both directions!
 
+Backer -< ProjectBacker >- Project
+
+ProjectBacker belongs to a Project
+ProjectBacket belongs to a Backer
+
+Projects have many Backers through ProjectBacker
+Backers have many Projects through Project Backer
+
 We can call this class ProjectBacker - each instance of ProjectBacker will
 represent an association between a single backer and a single project. A
 ProjectBacker, therefore, belongs to one Backer and one Project. ProjectBacker,
