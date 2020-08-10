@@ -1,5 +1,6 @@
 require_relative '../lib/backer'
 require_relative '../lib/project_backer'
+
 class Project
     attr_reader :title
 
@@ -19,5 +20,5 @@ class Project
             project_list.backer
         end
     end
-    
+
 end
